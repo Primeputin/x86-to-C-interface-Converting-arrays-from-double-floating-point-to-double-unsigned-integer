@@ -19,8 +19,8 @@
   <a href="#about">About</a> &#xa0; | &#xa0; 
   <a href="#run">How to run</a> &#xa0; | &#xa0; 
   <a href="#result" target="_blank">Performance Result</a> &#xa0; | &#xa0; 
-  <a href="https://github.com/Primeputin" target="_blank">Author1</a> &#xa0; | &#xa0; 
-  <a href="https://github.com/nimbus7462" target="_blank">Author2</a>
+  <a href="https://github.com/Primeputin" target="_blank">Author1: Vladimir Tang</a> &#xa0; | &#xa0; 
+  <a href="https://github.com/nimbus7462" target="_blank">Author2: Pierce Hokia</a>
 </p>
 <div id="about">
   <h2> Introduction </h2>
