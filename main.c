@@ -27,6 +27,7 @@ int main()
     }
 
     struct timespec start, end;
+    long long temp = 0;
     long long time_taken = 0;
 	for (i=0;i<30;i++)
 	{
@@ -38,22 +39,25 @@ int main()
     clock_gettime(CLOCK_MONOTONIC, &end); // End time
 
     // Calculate elapsed time in nanoseconds
-    time_taken += (end.tv_sec - start.tv_sec) * 1000000000 + (end.tv_nsec - start.tv_nsec);
+    temp += (end.tv_sec - start.tv_sec) * 1000000000 + (end.tv_nsec - start.tv_nsec);
+    time_taken += temp;
     
 }
     // Print the time taken in nanoseconds
     time_taken /=30;
-
+printf("--------------------------------\n");
     // Print the output array
     count = 0;
-//    for (i = 0; i < rowSize; i++) {
-//        for (j = 0; j < colSize; j++) {
-//            printf("%llu ", output[count]);
-//            count += 1;
-//        }
-//        printf("\n");
-//    }
+    for (i = 0; i < rowSize; i++) {
+        for (j = 0; j < colSize; j++) {
+            printf("%llu ", output[count]);
+            count += 1;
+        }
+        printf("\n");
+    }
 printf("Time taken by imgCvtGrayDoubleToInt: %lld nanoseconds\n", time_taken);
+printf("Rows: %d\n", rowSize);
+printf("Columns: %d\n", colSize);
     return 0;
 }
 
