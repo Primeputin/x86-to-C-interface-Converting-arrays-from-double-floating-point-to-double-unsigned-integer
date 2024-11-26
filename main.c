@@ -39,7 +39,7 @@ int main()
     clock_gettime(CLOCK_MONOTONIC, &end); // End time
 
     // Calculate elapsed time in nanoseconds
-    temp += (end.tv_sec - start.tv_sec) * 1000000000 + (end.tv_nsec - start.tv_nsec);
+    temp = (end.tv_sec - start.tv_sec) * 1000000000 + (end.tv_nsec - start.tv_nsec);
     time_taken += temp;
     
 }
