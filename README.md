@@ -108,15 +108,15 @@ Example.
   <p>
       All Execution Time testing files can be found in the "performance_testing" branch. In order to test execution times for the varying input sizes (10, 100, 300), a text file was used to input the data. The main C code was also modified to run the asm function 30 times and display the average execution time for the 30 tests done.
 
- A library in "time.h" was used to record the execution time of the function by recording the start and end time of the function then subtracting them before sending them to a total time variable. Then the variable is then divided by 30 so get the average time to execute the inputs. Note that only the function was timed and not the whole code.
+ A library in "time.h" was used to record the execution time of the function by recording the start and end times of the function and then subtracting them before sending them to a total time variable. The variable is then divided by 30 to get the average time to execute the inputs. Note that only the function was timed and not the whole code.
 </p>
 <h3>Average Execution times</h3>
-	<h4>	&emsp; - main < 10x10.txt</h4>
+	<h4>	&emsp; - main < input10.txt</h4>
 		<p>&emsp;	&emsp;	- Average execution time: 533 nanoseconds</p>
-	<h4>	&emsp;- main < 100x100.txt</h4>
+	<h4>	&emsp;- main < input100.txt</h4>
  		<p>	&emsp;&emsp;	- Average execution time: 90526 nanoseconds</p>
-	<h4>	&emsp;- main < 300x300.txt</h4>
+	<h4>	&emsp;- main < input300.txt</h4>
  		<p>	&emsp;&emsp;	- Average execution time: 867156 nanoseconds</p>
 <h3>Analysis</h3>
-  <p>As expected the average execution times increase as the dataset increases. The rate at which the execution times are increasing is also noted to be exponential where the first file containing a 10x10 data-size appears only to take around 500 nanoseconds but going to 100x100 jumps up to around 90000 nanoseconds. This may indicate that more outliers in the data set happen as the range gets bigger and bigger. By comparing the rate at which the average execution time increases relative to the increase in the input we can see that the 10x10 input took 533 nanoseconds and 100x100 took 90526 by dividing the 2 numbers and dividing it by 10 more we can see that the average rate it does up is around 18 times its previous input size, comparing the 100x100 to 300x300 though the gap of their average execution time came at a rate of only 3 which could indicate that the smaller rate of increase between the 100x100 and 300x300 inputs is due to overhead factors stabilizing.</p>
+  <p>As expected the average execution times increase as the dataset increases. The rate at which the execution times are increasing is also noted to be exponential where the first file, input10,  appears only to take around 500 nanoseconds but going to 100 jumps up to around 90000 nanoseconds. This may indicate that more outliers in the data set happen as the range gets bigger and bigger. By comparing the rate at which the average execution time increases relative to the increase in the input we can see that input10 input took 533 nanoseconds and input100 took 90526 by dividing the 2 numbers and dividing it by 10 more we can see that the average rate it does up is around 18 times its previous input size, comparing the input100 to input300 through the gap of their average execution time came at a rate of only 3 which could indicate that the lower rate of increase between input100 and input300 inputs is due to overhead factors stabilizing.</p>
 </div>
