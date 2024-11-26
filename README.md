@@ -106,7 +106,7 @@ Example.
 <div id = "result">
   <h2>Performance Result</h2>
   <p>
-      All Execution Time testing files can be found in the "performance_testing" branch. In order to test execution times for the varying input sizes (10, 100, 500), a text file was used to input the data. The main C code was also modified to run the asm function 30 times and display the average execution time for the 30 tests done.
+      All Execution Time testing files can be found in the "performance_testing" branch. In order to test execution times for the varying input sizes (10, 100, 300), a text file was used to input the data. The main C code was also modified to run the asm function 30 times and display the average execution time for the 30 tests done.
 
  A library in "time.h" was used to record the execution time of the function by recording the start and end time of the function then subtracting them before sending them to a total time variable. Then the variable is then divided by 30 so get the average time to execute the inputs. Note that only the function was timed and not the whole code.
 </p>
