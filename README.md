@@ -112,13 +112,13 @@ Example.
 </p>
 <h3>Average Execution times</h3>
 	<h4>	&emsp; - main < input10.txt</h4>
-		<p>&emsp;	&emsp;	- Average execution time: 533 nanoseconds</p>
+		<p>&emsp;	&emsp;	- Average execution time: 126 nanoseconds</p>
 	<h4>	&emsp;- main < input100.txt</h4>
- 		<p>	&emsp;&emsp;	- Average execution time: 90526 nanoseconds</p>
+ 		<p>	&emsp;&emsp;	- Average execution time: 5603 nanoseconds</p>
 	<h4>	&emsp;- main < input300.txt</h4>
- 		<p>	&emsp;&emsp;	- Average execution time: 867156 nanoseconds</p>
+ 		<p>	&emsp;&emsp;	- Average execution time: 71340 nanoseconds</p>
 <h3>Analysis</h3>
-  <p>As expected the average execution times increase as the dataset increases. The rate at which the execution times are increasing is also noted to be exponential where the first file, input10,  appears only to take around 500 nanoseconds but going to 100 jumps up to around 90000 nanoseconds. This may indicate that more outliers in the data set happen as the range gets bigger and bigger. By comparing the rate at which the average execution time increases relative to the increase in the input we can see that input10 input took 533 nanoseconds and input100 took 90526 by dividing the 2 numbers and dividing it by 10 more we can see that the average rate it does up is around 18 times its previous input size, comparing the input100 to input300 through the gap of their average execution time came at a rate of only 3 which could indicate that the lower rate of increase between input100 and input300 inputs is due to overhead factors stabilizing.</p>
+  <p>As expected the average execution times increase as the dataset increases. The rate at which the execution times are increasing is also noted to be exponential where the first file, input10,  appears only to take an average of 126 nanoseconds but going to 100 jumps up to an average of 5603 nanoseconds. This may indicate that more outliers in the data set happen as the range gets bigger and bigger. By comparing the rate at which the average execution time increases relative to the increase in the input we can see that input10 input took 126 nanoseconds and input100 took 5603 nanoseconds and when we move on to using input300 tasking an average of 71340 there for we can observe the increase of the average execution time is exponential as the input gets larger. This also follows the common occurrence on computers where the larger the input, the larger the execution time grows exponentially since the computer handles more data and operations which places stress on the processing unit.</p>
 </div>
 	<h3>Output</h3>	
 <img src="output.png" >
